@@ -1,0 +1,50 @@
+.get-coordinates {
+    width: 901px;
+    margin: auto;
+}
+
+.get-coordinates__container {
+    width: 100%;
+}
+
+.get-coordinates__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.get-coordinates__item {
+    padding: 16px;
+    margin-right: 32px;
+    margin-bottom: 32px ;
+    width: 279px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: black solid 1px;
+}
+
+.get-coordinates__image {
+    display: block;
+    margin: auto auto 16px;
+}
+
+.get-coordinates__p {
+    margin: 0 0 16px 0;
+}
+
+.get-coordinates__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.get-coordinates__button--delete {
+    display: block;
+    margin: auto auto 16px;
+}
+
+.get-coordinates__button--map {
+    display: block;
+    margin: auto auto 16px;
+}
+
+.get-coordinates__p--hidden {
+    display: none;
+}

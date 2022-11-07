@@ -1,0 +1,43 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #999999;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #20ABBE;
+    font-size: 24px;
+    line-height: 110%;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+.btn--delete {
+    display: block;
+    background-color: indianred;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+}
