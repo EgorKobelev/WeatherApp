@@ -28,7 +28,7 @@ const CreateMapContainer = () => {
     document.body.append(mapContainer,map);
 }
 
-const DeleteMapEvent = (event) => {
+const DeleteMapEvent = () => {
     const map = document.getElementById("map");
     const mapContainer = document.getElementById("map-container");
     map.parentNode.removeChild(map);
@@ -47,7 +47,7 @@ const DeleteMap = (map) => {
     }
 }
 
-const ShowMap = (event) => {
+const ShowMap = () => {
     const map = document.getElementById("map");
     if (map) {
         DeleteMap(map);
@@ -56,10 +56,7 @@ const ShowMap = (event) => {
     ymaps.ready(init);
     function init(){
         const hiddenElement = document.getElementById("cords-hidden");
-        console.log(hiddenElement)
-        console.log(hiddenElement.textContent)
         const cords = GetHiddenCords(hiddenElement.textContent);
-        console.log(cords)
         const myMap = new ymaps.Map("map", {
             center: [cords.lat, cords.lon], //создать пустой элемент внутри карточки с данными о координатах
             zoom: 7
@@ -112,7 +109,6 @@ const GetWeatherData = async (latitude, longitude) => {
         ClearErrorField();
         const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=65e593fa4d57b60fef88e0a43cc6b3bb`)
         const locationWeather = await result.json();
-        console.log(locationWeather);
         return {
             temperature: locationWeather.main.temp,
             coords: locationWeather.coord,
@@ -172,5 +168,7 @@ const GetValues = (event) => {
     }
 }
 
+//alert("Используйте vpn: рекомендуется ninja vpn. При подключении указывать европейские регионы - Германия, Франция и тд")
 const form = document.getElementById("request-coordinates__form")
-form.addEventListener("submit", GetValues
+form.addEventListener("submit", GetValues)
+

@@ -5,7 +5,7 @@
 
 body {
     background-color: #999999;
-    font-family: sans-serif;
+    font-family:    sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -40,4 +40,13 @@ body {
 
 .container {
     margin: 0 auto;
+}
+
+.alert {
+    color: indianred;
+    font-size: 24px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
 }
