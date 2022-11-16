@@ -2,7 +2,6 @@
     width:  300px;
     height: 200px;
     position: absolute;
-    /*height/2 - 16(16 - отступ от кнопки)*/
     top: calc(50% - 84px);
     left: calc(50% - 150px);
 }
