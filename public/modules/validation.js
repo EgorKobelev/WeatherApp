@@ -22,6 +22,7 @@ export const ClearErrorField = () => {
 }
 
 const ShowErrors = (error) => {
+    const form = document.getElementById("request-coordinates__form")
     const errorField = document.querySelector(".request-coordinates__p--error")
     if (!errorField) {
         const paragraphError = document.createElement("p");
@@ -33,3 +34,6 @@ const ShowErrors = (error) => {
         errorField.textContent = error.message;
     }
 }
+
+
+// module.exports = {ValidateValues, ClearErrorField}

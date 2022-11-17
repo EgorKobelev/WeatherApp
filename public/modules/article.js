@@ -1,5 +1,8 @@
-import {KtoC} from "./helper.js";
-import {DeleteArticleOnClick, ShowMap} from "./map.js";
+// const maps = require("./map.js")
+// const KtoC = require("./helper");
+
+import {KtoC} from "./helper.js"
+import {ShowMap, DeleteArticleOnClick} from "./map.js";
 
 export const CreateArticle = (weatherData) => {
     const listElement = document.createElement("li");

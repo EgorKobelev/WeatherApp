@@ -64,3 +64,5 @@ const GetHiddenCords = (text) => {
         lon: parseFloat(listCords[1]),
     }
 }
+
+// module.exports = {ShowMap, DeleteArticleOnClick}

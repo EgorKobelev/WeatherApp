@@ -1,6 +1,8 @@
-import {ValidateValues} from "./validation.js";
 import {GetWeatherData} from "./weather.js";
 import {CreateArticle} from "./article.js";
+import {ValidateValues} from "./validation.js";
+
+
 
 const GetValues = (event) => {
     event.preventDefault();
@@ -12,6 +14,7 @@ const GetValues = (event) => {
         })
     }
 }
+
 
 const form = document.getElementById("request-coordinates__form")
 form.addEventListener("submit", GetValues)

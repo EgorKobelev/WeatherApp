@@ -1,5 +1,5 @@
-import {ClearErrorField} from "./validation.js";
-
+// const {ClearErrorField} = require("./validation");
+import {ClearErrorField} from "/modules/validation.js";
 
 export const GetWeatherData = async (latitude, longitude) => {
     try {
@@ -16,3 +16,5 @@ export const GetWeatherData = async (latitude, longitude) => {
         console.log(error.message);
     }
 }
+
+// module.exports = GetWeatherData;
